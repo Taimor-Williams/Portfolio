@@ -1,8 +1,9 @@
 import Button from "./Button";
 import reactLogo from '/logo192.png'
 import DropDown from "./DropDown";
+import Resume from "./Resume";
 
-const sections = ["About", "Home", "Resume"];
+const sections = ["About", "Projects"];
 
 
 export default function Scroll({setCurrentPage}){
@@ -18,15 +19,16 @@ export default function Scroll({setCurrentPage}){
                 <ul className="flex justify items-right">
                     {sections.map((project, index)=>{ 
                         return (
-                        <li key = {index} className="mr-2">
+                        <li key = {index} className="">
                             <Button onClick={() => setCurrentPage(project)}>{project}</Button>
                         </li>
                         );
                     })}
-                    <DropDown className = ""
+                    <Resume className = "flex"></Resume>
+                    {/* <DropDown className = ""
                     setCurrentPage={setCurrentPage}>
                 
-                    </DropDown>
+                    </DropDown> */}
                 </ul>
             </div>
             
