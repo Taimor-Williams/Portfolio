@@ -1,10 +1,11 @@
 import Button from "./Button";
-import reactLogo from '../../public/logo192.png'
+import reactLogo from '/logo192.png'
+import DropDown from "./DropDown";
 
-const sections = ["hello", "world", "death", "my enemies", "more", "ivonne", "me"];
+const sections = ["About", "Home", "Resume"];
 
 
-export default function Scroll(){
+export default function Scroll({setCurrentPage}){
 
     return(
         <nav className="mt-4 w-full bg-sky-600 ring-4 ring-sky-800 hover:ring-sky-300">
@@ -22,6 +23,10 @@ export default function Scroll(){
                         </li>
                         );
                     })}
+                    <DropDown className = ""
+                    setCurrentPage={setCurrentPage}>
+                
+                    </DropDown>
                 </ul>
             </div>
             
