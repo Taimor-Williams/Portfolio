@@ -19,7 +19,7 @@ export default function Scroll({setCurrentPage}){
                     {sections.map((project, index)=>{ 
                         return (
                         <li key = {index} className="mr-2">
-                            <Button>{project}</Button>
+                            <Button onClick={() => setCurrentPage(project)}>{project}</Button>
                         </li>
                         );
                     })}

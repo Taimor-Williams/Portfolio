@@ -3,6 +3,7 @@ import './App.css';
 import DropDown from './components/DropDown';
 import About from './components/About';
 import Scroll from './components/Scroll';
+import Projects from './components/Projects';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('');
@@ -11,7 +12,13 @@ function App() {
       <Scroll className ="" 
       setCurrentPage = {setCurrentPage}></Scroll>
       <h2>{currentPage}</h2>
-      <About></About>
+      {/* <Projects /> */}
+      {currentPage == "About" && 
+        <About />
+      }
+      {currentPage == "Projects" && 
+        <Projects />
+      }
     </div>
   );
 }
