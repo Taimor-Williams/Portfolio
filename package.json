@@ -12,10 +12,6 @@
     "predeploy": "npm run build",
     "deploy": "main -d dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Taimor-Williams/Portfolio.git"
-  },
   "dependencies": {
     "github": "^14.0.0",
     "pages": "^0.0.16",
