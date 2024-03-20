@@ -1,6 +1,15 @@
 import list from "../list.json"
 import spearMan from '/spearman.png'
+import shubox from '/shubox.png'
+import connect from '/connect4.png'
 import Project from "./Project"
+
+var dict = {
+    "Shubox":shubox,
+    "Connect4":connect,
+    "Future work":spearMan
+}
+
 
 export default function Projects(){
     return (
